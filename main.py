@@ -29,13 +29,13 @@ auth4 = {
 
 def apiCall():
     account1 = requests.post(url, data = data, headers=auth1)
-    print(account1)
+    print(f'account1 {account1}')
     account2 = requests.post(url, data = data, headers=auth2)
-    print(account2)
+    print(f'account2 {account2}')
     account3 = requests.post(url, data = data, headers=auth3)
-    print(account3)
+    print(f'account3 {account3}')
     account4 = requests.post(url, data = data, headers=auth4)
-    print(account4)
+    print(f'account4 {account4}')
 
 keep_alive()
 
