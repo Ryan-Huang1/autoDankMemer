@@ -19,10 +19,10 @@ def apiCall():
     x = requests.post(url, data = data, headers=headers)
     print(x)
 
+keep_alive()
+
 while True:
     apiCall()
     number = randint(45, 100)
     print(number)
     time.sleep(number)
-
-keep_alive()
