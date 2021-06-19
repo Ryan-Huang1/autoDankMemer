@@ -1,3 +1,4 @@
+from keep_alive import keep_alive
 from random import randint
 import requests
 import time
@@ -24,3 +25,4 @@ while True:
     print(number)
     time.sleep(number)
 
+keep_alive()
