@@ -11,13 +11,19 @@ data = {
     'tts': False
 }
 
-headers = {
-    'authorization': os.getenv('authorization')
+auth1 = {
+    'authorization': os.getenv('auth1')
+}
+
+auth2 = {
+    'authorization': os.getenv('auth2')
 }
 
 def apiCall():
-    x = requests.post(url, data = data, headers=headers)
-    print(x)
+    account1 = requests.post(url, data = data, headers=auth1)
+    print(account1)
+    account2 = requests.post(url, data = data, headers=auth2)
+    print(account2)
 
 keep_alive()
 
