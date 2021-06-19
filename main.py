@@ -23,6 +23,10 @@ auth3 = {
     'authorization': os.getenv('auth3')
 }
 
+auth4 = {
+    'authorization': os.getenv('auth4')
+}
+
 def apiCall():
     account1 = requests.post(url, data = data, headers=auth1)
     print(account1)
@@ -30,6 +34,8 @@ def apiCall():
     print(account2)
     account3 = requests.post(url, data = data, headers=auth3)
     print(account3)
+    account4 = requests.post(url, data = data, headers=auth4)
+    print(account4)
 
 keep_alive()
 
